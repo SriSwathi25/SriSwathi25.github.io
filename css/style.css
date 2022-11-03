@@ -1,0 +1,167 @@
+:root{
+    --color1: #D62839;
+    --bright-maroon: #BA324F;
+    --primary-text: #175676;
+    --body-bg: #CCE6F4;
+    --color2: #4BA3C3;
+
+    background-color: var(--body-bg) ;   
+}
+.about_me_text{
+    color: var(--primary-text);
+}
+ .text-highlight{
+    background: linear-gradient(45deg, var(--color2), var(--color1) ,var(--bright-maroon), var(--primary-text), var(--body-bg));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar{
+    background-color: var(--color1);
+}
+.nav-item:hover{
+    height: 100%;
+    background-color: var(--bright-maroon); 
+    border-radius: 2px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+    font-weight:bold;
+}
+.nav-item a{
+    color: white;
+}
+.navbar-brand{
+
+    color: white !important;
+}
+.nav-item:hover a{
+    color: var(--primary-text);
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    background-color: #c1d7e3;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 10s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: var(--body-bg);
+    color: var(--primary-text);
+  }
+  .flip-card-back {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color:var(--bright-maroon);
+    color: white !important;
+    transform: rotateY(180deg);
+  }
+
+
+.horizontal-shadow{
+    display: none   ;
+}
+
+.navbar:hover~.horizontal-shadow{
+    height: 5px;
+    background-color: var(--bright-maroon);
+}
+
+.main-section{
+    border-radius: 5px;
+}
+
+
+.social-icon{
+    padding: 8px 13px;
+    font-size: 1.3rem;
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    color: #fff;
+    background: linear-gradient(90deg, var(--color1), var(--color2));
+    border-radius: 100%;
+  }
+
+.social-icon:hover{
+    padding: 8px 13px;
+    font-size: 1.4rem;
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    color: #fff;
+    background: linear-gradient(90deg, var(--color2), var(--color1));
+    border-radius: 100%;
+  }
+
+.home_title{
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(45deg, var(--color2), var(--color1) ,var(--bright-maroon), var(--primary-text), var(--body-bg));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-image 5s ease-in-out forwards;
+  }
+#AboutMe{
+    min-height: 100%;
+}
+
+#Work, #Academics, #Skills, #Projects, #Connect{
+    
+    /* 
+    background-color: var(--bright-maroon);
+    */
+    color: var(--color1);   
+}
+.container.main-section { padding-top: 70px !important; } 
+/*
+To not disturb fixed navbar with navigation 
+*/
+
+.skill_container{
+    border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  
+}
+.connect-form .btn{
+  background-color: var(--color2) ;
+  font-weight: 500;
+  color: white;
+}
+
+.footer{
+  background-color: #CCE6F4;
+  height: 15vh;
+}
+
+
+
+
